@@ -8,7 +8,7 @@
           {{ "<!-- Slider -->" | safeHTML}}
           <section class="cd-intro">
             <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay=".4s">
-              {{ with .Site.Params.banner.heading }}<span>{{ . }}</span>{{ end }}
+              {{ with .Site.Params.banner.heading }}<span>{{ . | safeHTML }}</span>{{ end }}
               <br>
               <span class="cd-words-wrapper text-center">
                 {{ range $index, $element := .Site.Params.banner.flipText }}
