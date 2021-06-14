@@ -37,11 +37,11 @@ Primary style
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
   vertical-align: top;
-  width: auto!important;
 }
 .cd-headline.slide b {
   opacity: 0;
   top: .2em;
+  width: 100%;
 }
 .cd-headline.slide b.is-visible {
   top: 0;
