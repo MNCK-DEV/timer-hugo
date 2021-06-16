@@ -1331,3 +1331,7 @@ ul.social-icons li {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+a, a:hover {
+  color: var(--main-color);
+}
