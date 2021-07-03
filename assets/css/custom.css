@@ -1,3 +1,8 @@
 .embed-responsive-iphone::before {
     padding-top:216.71%
 }
+
+ul li {
+    list-style-type: disc;
+    margin-left: 30px;
+}
