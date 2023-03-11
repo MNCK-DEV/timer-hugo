@@ -1,14 +1,19 @@
 :root {
-  --main-color: #c60100;
+  --main-color: rgb(152, 2, 8);
+  --background-color: rgb(8, 8, 8);
+  --main-font-color: #fff;
 }
 
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(https://fonts.googleapis.com/css?family=Glegoo);
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@1,500&display=swap);
+
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--main-font-color);
 }
 
 h1,
@@ -17,7 +22,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--main-font-color);
 }
 
 h2 {
@@ -25,14 +31,14 @@ h2 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'JetBrains Mono', monospace;
   line-height: 22px;
   font-size: 16px;
   font-weight: 300;
 }
 
 body {
-  background: #ffffff;
+  background: var(--background-color);
 }
 
 ul {
@@ -197,18 +203,18 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background: #fff;
+  background: var(--background-color);
   color: #fff;
   transition: all 0.2s ease-out 0s;
   padding: 15px 0;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   z-index: 10;
 }
 
 .top-bar.animated-header {
   padding: 20px 0;
-  background: #fff;
+  background: var(--background-color);
   box-shadow: none;
 }
 
@@ -220,11 +226,11 @@ a:hover {
 }
 
 .navbar.bg-light {
-  background: #fff !important;
+  background: var(--background-color) !important;
 }
 
 .navbar .nav-item .nav-link {
-  color: #444 !important;
+  color: var(--main-font-color) !important;
   font-size: 14px;
   font-weight: 500;
   transition: .3s all;
@@ -239,6 +245,10 @@ a:hover {
 
 .navbar .nav-item:last-child .nav-link {
   padding-right: 0;
+}
+
+.navbar .navbar-toggler {
+  background-color: var(--main-color);
 }
 
 .dropdown-menu {
@@ -947,7 +957,7 @@ article {
 
 .single-post .post-content ol li,
 .single-post .post-content ul li {
-  color: #666;
+  color: var(--main-font-color);
 }
 
 .single-post .media {
@@ -1271,9 +1281,9 @@ article {
 }
 
 #footer {
-  background: #fff;
+  background: var(--background-color);
   padding: 25px 0;
-  color: #555;
+  color: var(--main-font-color);
 }
 
 #footer .copyright {
@@ -1334,4 +1344,8 @@ ul.social-icons li {
 
 a, a:hover {
   color: var(--main-color);
+}
+
+.content_main .info {
+  color: var(--main-font-color);
 }

@@ -12,3 +12,46 @@ h2#ukraine {
     margin-top: 150px;
     color: #c60100;
 }
+
+
+.content_main {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+}
+
+.content_main .keyboard {
+    background-image: url("/images/redkeeb.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+@media (max-width: 767px) {
+    .content_main {
+        grid-template-columns: 1fr;
+    }
+
+    .content_main .keyboard {
+        height: 200px;
+        background-image: url("/images/redkeeb_rotated.png");
+    }
+}
+
+
+@media (min-width: 768px) {
+    .content_main .keyboard {
+        min-height: 82vh;
+    }
+}
+
+.content_main .info {
+    padding: 20px;
+    text-align: justify;
+}
+
+.content_main .info > div {
+    margin-bottom: 30px;
+}
